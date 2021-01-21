@@ -18,3 +18,36 @@ for (let object of objArray){
     object.totalTime = timeCalculate(object.startedAt, object.finishedAt);
 }
 
+ document.write(`<table class ="table"> 
+        <tr class = "tableRowHeader">
+            <th>started At</th> 
+            <th>finished At</th> 
+            <th>Total Time Spent</th> 
+            <th>Tasks Given</th> 
+            <th>Tasks Finished</th> 
+            <th>Tasks Finished %</th> 
+            <th>Topic</th>
+        </tr>
+    </table>`);
+
+function creatTableRows(obj){
+    document.write(`<table class ="table"> 
+        <tr class = "tableRow">
+            <td>${convertDate(obj.startedAt)}</td>
+            <td>${convertDate(obj.finishedAt)}</td> 
+            <td>${obj.totalTime}</td> 
+            <td>${obj.tasksGiven}</td> 
+            <td>${obj.tasksFinished}</td> 
+            <td>${obj.tasksFinishedPrecent}</td> 
+            <td>${obj.topic}</td>   
+        </tr>
+    </table>`);
+}
+function convertDate(date){
+    return date.toString().substr(16,5);
+}
+
+for(let object of objArray){
+    creatTableRows(object);
+}
+console.log()
