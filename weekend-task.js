@@ -20,26 +20,26 @@ for (let object of objArray){
 
  document.write(`<table class ="table"> 
         <tr class = "tableRowHeader">
-            <th>started At</th> 
-            <th>finished At</th> 
-            <th>Total Time Spent</th> 
-            <th>Tasks Given</th> 
-            <th>Tasks Finished</th> 
-            <th>Tasks Finished %</th> 
-            <th>Topic</th>
+            <th class ="tableCollomHeader">started At</th> 
+            <th class ="tableCollomHeader">finished At</th> 
+            <th class ="tableCollomHeader">Total Time Spent</th> 
+            <th class ="tableCollomHeader">Tasks Given</th> 
+            <th class ="tableCollomHeader">Tasks Finished</th> 
+            <th class ="tableCollomHeader">Tasks Finished %</th> 
+            <th class ="tableCollomHeader">Topic</th>
         </tr>
     </table>`);
 
 function creatTableRows(obj){
     document.write(`<table class ="table"> 
         <tr class = "tableRow">
-            <td>${convertDate(obj.startedAt)}</td>
-            <td>${convertDate(obj.finishedAt)}</td> 
-            <td>${obj.totalTime}</td> 
-            <td>${obj.tasksGiven}</td> 
-            <td>${obj.tasksFinished}</td> 
-            <td>${obj.tasksFinishedPrecent}</td> 
-            <td>${obj.topic}</td>   
+            <td class ="tableCollom" >${convertDate(obj.startedAt)}</td>
+            <td class ="tableCollom">${convertDate(obj.finishedAt)}</td> 
+            <td class ="tableCollom">${obj.totalTime}</td> 
+            <td class ="tableCollom">${obj.tasksGiven}</td> 
+            <td class ="tableCollom">${obj.tasksFinished}</td> 
+            <td class ="tableCollom">${obj.tasksFinishedPrecent}</td> 
+            <td class ="tableCollom">${obj.topic}</td>   
         </tr>
     </table>`);
 }
@@ -50,4 +50,3 @@ function convertDate(date){
 for(let object of objArray){
     creatTableRows(object);
 }
-console.log()
