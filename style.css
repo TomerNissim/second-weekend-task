@@ -1,15 +1,17 @@
 .table{
     display: flex;
     justify-content: center;
-  }
+}
 .tableCollom{
-    margin: 1vh 1vw 1vh 1vw;
+    margin: 2vh 1vw 1vh 1vw;
     width: 7vw;
-    height: 4vh;
+    height: 5vh;
     border: 0.1vw solid;
-    font-size: 1.6vw;
+    border-radius: 15%;
+    font-size: 1.3vw;
     text-align: center;
-
+    background-color: #222022;
+    color: white;
 }
 .tableCollomHeader{
     margin: 1vh 1vw 1vh 1vw;
@@ -18,16 +20,6 @@
     border: 0.1vw solid;
     font-size: 1.4vw;
     text-align: center;
-
-
+    background-color:#625d62;
+    color: white;
 }
-}
-/*
-.tableRow{
-  width: 50vw;
-  padding 10vw;
-}
-.tableRowHeader{
-    width: 30vw;
-}*/
-
