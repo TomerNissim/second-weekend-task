@@ -1,3 +1,4 @@
+"use strict"
 let objArray = [{topic: "HTML" ,startedAt: new Date("2021-01-21:13:00"),finishedAt: new Date("2021-01-21:18:30"),tasksGiven: 16, tasksFinished: 12},
 {topic: "CSS" ,startedAt:new Date("2021-01-20:03:00"),finishedAt: new Date("2021-01-20:12:30"), tasksGiven: 14, tasksFinished: 11},
 {topic: "GitHub" ,startedAt: new Date("2021-01-20:16:00"),finishedAt: new Date("2021-01-20:20:00"),tasksGiven: 12, tasksFinished: 7},
@@ -25,7 +26,6 @@ createTableHeader(tableHeaderArray);
 for(let object of objArray){
     creatTableRows(object, tableBodyArray);
 }
-
 
 // all the function are below this line
 function createTableHeader(headersArray){
