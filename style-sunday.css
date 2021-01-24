@@ -1,0 +1,39 @@
+td{
+    margin: 2vh 1vw 1vh 1vw;
+    width: 7vw;
+    height: 5vh;
+    border: 0.1vw solid;
+    border-radius: 15%;
+    font-size: 1.3vw;
+    text-align: center;
+    background-color: #222022;
+    color: white;
+}
+th{
+    margin: 1vh 1vw 1vh 1vw;
+    width: 7vw;
+    height: 4vh;
+    border: 0.1vw solid;
+    font-size: 1.4vw;
+    text-align: center;
+    background-color:#625d62;
+    color: white;
+}
+.totalTimeRed{
+    background-color: #ec0c0c ;
+}
+.totalTimeOrange{
+    background-color: #ec9e0c;
+}
+.totalTimeGreen{
+    background-color: #0cec2d ;
+}
+.highPrecent{
+    background-color: #77056d;
+}
+.mediumPrecent{
+    background-color: #ec0ce7;
+}
+.lowPrecent{
+    background-color: #e98fe7;
+}
